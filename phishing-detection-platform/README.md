@@ -104,3 +104,7 @@ Provider keys (`GOOGLE_SAFE_BROWSING_KEY`, `VIRUSTOTAL_API_KEY`) are reserved an
 - Reputation providers (Safe Browsing, VirusTotal) are not yet integrated; they are never treated as clean results.
 - No authentication or rate limiting in this prototype.
 - Scan records are kept for `SCAN_RETENTION_DAYS` and purged at server start; uploaded image bytes are never stored.
+## Screenshots
+![Dashboard](docs/screenshots/dashboard.png)
+![URL scan](docs/screenshots/url-caution.png)
+![Screenshot analysis](docs/screenshots/screenshot-analysis.png)
