@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Theme tokens. Dark is the default; light is applied with data-theme="light". */
+@theme {
+  --color-surface: #0b1426;
+  --color-card: #131d33;
+  --color-border: #22304f;
+  --color-muted: #94a3b8;
+  --color-accent: #22d3ee;
+  --color-accent-2: #3b82f6;
+  --color-highlight: #a78bfa;
+  --color-low: #22c55e;
+  --color-caution: #eab308;
+  --color-suspicious: #f97316;
+  --color-high: #ef4444;
+}
+
+:root[data-theme="light"] {
+  --color-surface: #f1f5f9;
+  --color-card: #ffffff;
+  --color-border: #cbd5e1;
+  --color-muted: #475569;
+}
+
+html, body, #root { height: 100%; }
+body { background: var(--color-surface); color: #e2e8f0; font-family: Inter, system-ui, sans-serif; }
+:root[data-theme="light"] body { color: #0f172a; }
